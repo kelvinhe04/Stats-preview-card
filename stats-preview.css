@@ -1,0 +1,127 @@
+/* -------------Table of contents----------
+
+1. Typography
+2. Layouts
+3. Image-containers
+4. Buttons
+
+-----------------------------------------*/
+
+/* ================
+      CSS Reset
+    ===============*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --transparent-white: hsla(0, 0%, 100%, 0.6);
+  --white: hsl(0, 0%, 100%);
+}
+body,
+html {
+  background: hsl(233, 47%, 7%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================
+      Layouts
+    ===============*/
+.card {
+  display: flex;
+  width: 70%;
+  border-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
+}
+.card__text {
+  padding: 4em;
+  width: 50%;
+}
+.card__text__container {
+  width: 95%;
+}
+.card__text__container2 {
+  width: 75%;
+}
+.card__preview {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.footer {
+  position: relative;
+  top: 9rem;
+}
+
+/* ================
+      Typography
+    ===============*/
+h1 {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+}
+h2 {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+}
+p {
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+}
+.card__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.card__desc {
+  line-height: 1.5rem;
+  margin-bottom: 5rem;
+}
+.card__preview__title {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card__preview__desc {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+/* ================
+       Image-containers
+    ===============*/
+.img__container {
+  width: 50%;
+  position: relative;
+}
+.img {
+  border-radius: 0 10px 10px 0;
+}
+.img__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #581c78;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  border-radius: 0 10px 10px 0;
+}
+/* ================
+      Buttons
+    ===============*/
